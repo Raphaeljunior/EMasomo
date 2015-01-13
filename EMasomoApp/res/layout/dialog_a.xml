@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000"
+        android:id="@+id/relL">
+
+    <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="Consolas"
+            android:id="@+id/editText" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/question"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffff"
+            android:fontFamily="Consolas"
+            android:id="@+id/editText2"
+            android:layout_above="@+id/seekBar" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginBottom="62dp"
+            android:hint="@string/answer"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colorpick"
+            android:textColor="#ffffff"
+            android:fontFamily="Arial"
+            android:id="@+id/textView"
+            android:layout_above="@+id/accept" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginBottom="105dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:id="@+id/accept"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#69e640"
+            android:textSize="25dp"
+            android:background="@android:color/transparent" android:layout_alignRight="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cancel" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:textColor="#ff3300"
+            android:textSize="25dp"
+            android:fontFamily="Consolas" android:layout_toRightOf="@+id/accept"/>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="#7b7b7b">
+
+    <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/tabHost" android:layout_gravity="center_horizontal">
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+            <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+            </TabWidget>
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                    <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView"
+                            android:src="@drawable/appicon"
+                            android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Welcome to eMasomo"
+                            android:id="@+id/textView2"
+                            android:textColor="#941818"
+                            android:textSize="50dp"
+                            android:gravity="center"
+                           />
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Swipe"
+                            android:textSize="20dp"
+                            android:id="@+id/textView"
+                            android:layout_marginBottom="53dp"
+                            android:layout_centerHorizontal="true"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Search Our Library"
+                            android:id="@+id/textView22"
+                            android:layout_marginBottom="204dp"
+
+                            android:gravity="center"
+                            android:textColor="#941818"
+                            android:textSize="50dp"
+                            android:fontFamily="Droid Sans"
+                            android:textStyle="normal"/>
+                    <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView1"
+                            android:src="@drawable/library"
+                            android:layout_alignParentStart="true"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Engage in our interactive forum"
+                            android:id="@+id/textView55"
+
+                            android:gravity="center"
+                            android:textColor="#941818"
+                            android:textSize="50dp"
+                            android:fontFamily="Droid Sans"
+                            android:textStyle="bold"/>
+                    <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView4"
+                            android:src="@drawable/forum"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/tab4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Study, memorize and test yourself using flashcards"
+                        android:id="@+id/textView34"
+
+
+                        android:gravity="center"
+                        android:textColor="#941818"
+                        android:textSize="40dp"
+                        android:fontFamily="Droid Sans"
+                        android:textStyle="normal"/>
+                <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="90dp"
+                        android:id="@+id/imageView23"
+                        android:src="@drawable/flashcards"
+                       />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
